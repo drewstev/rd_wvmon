@@ -128,7 +128,7 @@ while pos<numbytes
             
             % deal with the directions not starting at 0
             % first direction may vary if plaform moves
-            first_bin=floor(wvldr.avg_heading);
+            first_bin=floor(wvldr.heading_offset);
             if first_bin<0;
                 first_bin=first_bin+360;
             end
